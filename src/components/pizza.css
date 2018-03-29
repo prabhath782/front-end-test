@@ -1,0 +1,12 @@
+.main {
+    display: block;
+}
+
+.header {
+    text-align: center;
+}
+
+.ui.blue.celled.striped.table {
+    width: 50% !important;
+    margin: auto auto !important;
+}
