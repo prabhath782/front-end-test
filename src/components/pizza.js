@@ -14,12 +14,12 @@ import {Sort} from './sort';
 class Pizzas extends Component { 
   constructor(props){
     super(props)
-    // this.state = {
-    //   sortClick:true,
-    //   filterKey:'',
-    //   pizzas:[],
-    //   loading:true
-    // }
+    this.state = {
+      sortClick:true,
+      filterKey:'',
+      pizzas:[],
+      loading:true
+    }
   }
 
   componentDidMount(){
@@ -66,7 +66,7 @@ class Pizzas extends Component {
   }
 
   render() { 
-    const after = (
+    const PizzasLoaded = (
       <div className = 'ui container'>
         <div className= 'header'>
           <h1>Pizzas Available</h1>          
@@ -85,10 +85,10 @@ class Pizzas extends Component {
       </div>
     )
 
-    const main = this.state.loading? <Loading/>:after
+    const mainContent = this.state.loading? <Loading/>:PizzasLoaded
     return (
          <div>
-          {main}
+          {mainContent}
          </div>       
     )
   }
