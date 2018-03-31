@@ -3,7 +3,7 @@ const path = require('path');
 
 const appTitle = 'Pizza Challenge';
 const filePath = path.join(__dirname, 'src','index.js');
-const PORT = '8080';
+const PORT = '8060';
 
 const config = {
   entry: filePath,

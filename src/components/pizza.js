@@ -14,12 +14,12 @@ import {Sort} from './sort';
 class Pizzas extends Component { 
   constructor(props){
     super(props)
-    this.state = {
-      sortClick:true,
-      filterKey:'',
-      pizzas:[],
-      loading:true
-    }
+    // this.state = {
+    //   sortClick:true,
+    //   filterKey:'',
+    //   pizzas:[],
+    //   loading:true
+    // }
   }
 
   componentDidMount(){
